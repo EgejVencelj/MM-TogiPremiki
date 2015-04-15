@@ -8,7 +8,7 @@ function [A b] = premikiTogihTeles(X, Y)
   determinanta = det(C);
   D = eye(3);
   b = vsotaTockY-vsotaTockX;
-  b = sqrt(b*b');
+  %b = sqrt(b*b');
   if(determinanta < 0)
      D(3,3) = -1;
   endif
