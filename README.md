@@ -1,7 +1,7 @@
 # MM-TogiPremiki
 Matematicno modeliranje - Projekt togih premikov
 
-
+Pozdraljen svet
 
 Pozdravljeni,
 
