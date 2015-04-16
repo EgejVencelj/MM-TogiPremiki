@@ -1,6 +1,8 @@
 # MM-TogiPremiki
 Matematicno modeliranje - Projekt togih premikov
-
+#
+Build: https://www.dropbox.com/s/6p7we56nhx9aut3/Build.exe?dl=0
+#
 Pozdravljeni,
 
 ne vem koliko ste ze seznanjeni z git workflowom, za zacetek si zloadajte
