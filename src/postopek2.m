@@ -22,6 +22,10 @@ function [Qp b Y2] = postopek2(X,Y)
 
   [Qp R] = qr(Q');
   
+  diagonale = diag(R)
+  diagonale = sign(diagonale)
+  Qp = Qp * diag(diagonale)
+  
   Y2 = Qp*X1;
   plot(X1(1, :), X1(2, :), Y1(1, :), Y1(2, :), Y2(1, :), Y2(2, :))
   
