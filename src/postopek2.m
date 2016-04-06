@@ -11,8 +11,10 @@ function [Qp b Y2] = postopek2(X,Y)
   Y1 = Y-avgY;
   
   X2 = X1;
-  #Resujemo sistem X*Q=y, pri cemer X v prvem stolpcu vsebuje vse koordinate x1, v drugem stolpcu vse koordinate x2,
-  #v tretjem stolpcu vse koordinate x3, v cetrtem pa enke
+  #Ce imamo tri dimenzije rešujemo sistem X*Q=y, pri cemer X v prvem stolpcu vsebuje vse koordinate x1, 
+  #v drugem stolpcu vse koordinate x2 in v tretjem stolpcu vse koordinate x3
+  #Po vrsticah je enacba x1*qi1 + x2*qi2 + x3*qi3 = y1i
+  #Vektor p je resitev in vsebuje (qi1;qi2;qi3)
   for i = 1:n
     p= X2'\(Y1(i,:))';
     Q(i,1:n) = p(1:n);
