@@ -11,7 +11,6 @@ function [Qp b Y2] = postopek2(X,Y)
   Y1 = Y-avgY;
   
   X2 = X1;
-  X2(n+1,:)=ones(1,m);
   #Resujemo sistem X*Q=y, pri cemer X v prvem stolpcu vsebuje vse koordinate x1, v drugem stolpcu vse koordinate x2,
   #v tretjem stolpcu vse koordinate x3, v cetrtem pa enke
   for i = 1:n
