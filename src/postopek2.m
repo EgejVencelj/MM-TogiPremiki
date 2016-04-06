@@ -19,7 +19,7 @@ function [Qp b Y2] = postopek2(X,Y)
   endfor
   
 
-  [Qp R] = qr(Q');
+  [Qp R] = qr(Q);
   
   diagonale = diag(R)
   diagonale = sign(diagonale)
